@@ -13,6 +13,14 @@ API with two routes:
 Successor of the OpenTofu-era `terraform-aws-html-form-action`. First deployed
 for technative.eu v2026.
 
+## Demo
+
+The altcha widget on the technative.eu contact form: ticking *I'm not a robot*
+fetches a challenge from `GET /challenge`, solves the proof-of-work in-browser,
+and settles on **Verified** — the state that `POST /submit` then validates.
+
+![Animation of the altcha widget on a contact form: the I am not a robot checkbox is ticked, shows Verifying, then settles on Verified](docs/altcha-form-demo.webp)
+
 ## Usage
 
 ```nix
